@@ -1,0 +1,27 @@
+@font-face {
+    font-family: jaapokki;
+    src: url(../fonts/Jaapokki-font-package-1.0/jaapokki-regular.ttf);
+}
+
+.h2font {
+    font-family: jaapokki;
+    color: white;
+}
+
+.header {
+	height: 15%; 
+	background-color: black; 
+	border-bottom-style: double;
+	padding: .5% 0;
+}
+
+.footer {
+	height: 10%;
+	background-color: black; 
+	padding: .5% 0;
+}
+
+.invert_image {
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
+}
