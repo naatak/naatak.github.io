@@ -9,19 +9,40 @@
 }
 
 .header {
-	height: 15%; 
+	min-height: 15%; 
 	background-color: black; 
 	border-bottom-style: double;
-	padding: .5% 0;
+	padding-top: 8px;
 }
 
 .footer {
-	height: 10%;
-	background-color: black; 
-	padding: .5% 0;
+	min-height: 10%;
+	background-color: black;
+	padding-top: 16px;
+}
+
+.main {
+	min-height: 75%; 
+	vertical-align: middle;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .invert_image {
 	-webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+    color: white;
 }
