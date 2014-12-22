@@ -37,6 +37,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover div {
+	background-color: #222;
+	/*background: linear-gradient(#333, #222);*/
+}
+
 a:hover, a:active {
     text-decoration: none;
     color: white;
@@ -45,4 +50,10 @@ a:hover, a:active {
 a:visited, a:link{
     text-decoration: none;
     color: white;
+}
+
+.footer_img {
+	width: 32px; 
+	height: auto; 
+	padding-right: 8px;
 }
