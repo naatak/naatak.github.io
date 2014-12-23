@@ -12,12 +12,15 @@
 	min-height: 15%; 
 	background-color: black; 
 	border-bottom-style: double;
+	border-color: white;
 	padding-top: 8px;
 }
 
 .footer {
 	min-height: 10%;
 	background-color: black;
+	border-top-style: double;
+	border-color: white;
 	padding-top: 16px;
 }
 
@@ -56,4 +59,9 @@ a:visited, a:link{
 	width: 32px; 
 	height: auto; 
 	padding-right: 8px;
+}
+
+.panel {
+	border-color: #555 !Important;
+	border-radius: 0px !Important;
 }
