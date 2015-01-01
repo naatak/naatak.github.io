@@ -53,15 +53,15 @@ a:hover div {
 	/*background: linear-gradient(#333, #222);*/
 }
 
-a:hover, a:active {
-    text-decoration: none;
-    color: white;
+/*a:hover, a:active {
+    text-decoration: underline;
+    color: #222;
 }
 
-a:visited, a:link{
-    text-decoration: none;
-    color: white;
-}
+a:visited, a:link {
+    text-decoration: underline;
+    color: #777;
+}*/
 
 .footer_img {
 	width: 32px; 
@@ -74,6 +74,27 @@ a:visited, a:link{
 	border-radius: 0px !Important;
 }
 
-.wrapper {
-	min-height: 100%;
+.post {
+	width: 75%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.postHeader {
+	text-align: center;
+}
+
+.postImage {
+	max-width: 60%;
+}
+
+.post img {
+	max-width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.postList {
+	text-align: left;
+	margin: 0 auto;
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="main">
+    	<div class="post" align="center">
+	    	<div class="postHeader">
+	    		<h3 class="postTile">{{ page.title }}</h2>
+	    		<p class="postMeta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
+	    		{% if page.image %}<img class="postImage" src="/images/{{ page.image }}"><br><br>{% endif %}
+	    	</div>
+	    	<div class="postBody">
+	    		{{ content }}
+	    	</div>
+	    	<div class="postFooter">
+	    	</div>
+	    </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
