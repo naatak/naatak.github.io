@@ -1,0 +1,10 @@
+# Site settings
+title: PenNaatak
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pennaataktheatre.com" # the base hostname & protocol for your site
+twitter_username: naatak
+github_username:  naatak
+paginate: 10
+
+# Build settings
+markdown: kramdown
