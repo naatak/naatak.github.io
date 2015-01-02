@@ -2,7 +2,10 @@
 title: PenNaatak
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pennaataktheatre.com" # the base hostname & protocol for your site
-paginate: 5
+description: > # this means to ignore newlines until "baseurl:"
+  PenNaatak is University of Pennsylvania's premiere South Asian theatre group.
+  This is Naatak's website and blog.
+paginate: 10
 
 # Build settings
 markdown: kramdown
