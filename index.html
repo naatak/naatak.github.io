@@ -19,11 +19,17 @@ title: Home
                                     <h4>
                                       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                                     </h4>
-                                    <p class="postMeta">
-                                        <div class="fb-like" data-href="{{ post.url }}" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-                                         • {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}
-                                    </p>
-                                    {{ post.excerpt }}
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-8">
+                                            <p class="postMeta">
+                                                 {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}
+                                            </p>
+                                            {{ post.excerpt }}
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                                            <div class="fb-like" data-href="{{ post.url }}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
