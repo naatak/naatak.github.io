@@ -72,6 +72,8 @@ a:visited, a:link {
 .panel {
 	border-color: #555 !Important;
 	border-radius: 0px !Important;
+	border-style: none !Important;
+	box-shadow: none !Important;
 }
 
 .post {
@@ -96,4 +98,8 @@ a:visited, a:link {
 .postList {
 	text-align: left;
 	margin: 0 auto;
+}
+
+.active {
+	background-color: #222;
 }

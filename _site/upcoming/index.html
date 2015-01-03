@@ -9,6 +9,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
   <body>
     <script>
@@ -36,28 +37,28 @@
             </a>
         </h2>
         <a href="/">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navHome">
                 <h4 class="h2font">
                     Home
                 </h4>
             </div>
         </a>
         <a href="/upcoming">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navUpcoming">
                 <h4 class="h2font">
                     Upcoming Show
                 </h4>
             </div>
         </a>
         <a href="/past">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navPast">
                 <h4 class="h2font">
                     Past Productions
                 </h4>
             </div>
         </a>
         <a href="/about">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navAbout">
                 <h4 class="h2font">
                     About
                 </h4>
@@ -74,6 +75,11 @@
     </div>
 </div>
 
+<script>
+    $(document).ready(function() {
+        $("#navUpcoming").addClass("active");
+    });
+</script>
     <div class="footer">
 	<div class="container" align="center">
         <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
