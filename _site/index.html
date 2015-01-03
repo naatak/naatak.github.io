@@ -11,6 +11,23 @@
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/> -->
 </head>
   <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '799303723469067',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <div class="header">
 	<div class="container" align="center">
         <h2 class="h2font">
@@ -50,9 +67,11 @@
 </div>
     <div class="main">
     <div class="container" align="center">
-	    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h4>Home</h4><br>
             <p>Welcome to PenNaatak's website!</p><br>
+        </div>
+	    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
     		<div class="postList">
                 
                     <div class="panel panel-default">
@@ -76,6 +95,10 @@
 
             
 	    </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h5>Like us on Facebook!</h5>
+            <div class="fb-like-box" data-href="https://www.facebook.com/pages/PenNaatak/318739744807578" data-width="292" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+        </div>
     </div>
 </div>
 
