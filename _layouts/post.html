@@ -13,7 +13,7 @@
 			    		<p class="postMeta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
 			    		<div class="fb-like" data-href="{{ post.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-width="160"></div>
 			    		<br><br>
-			    		{% if page.image %}<img class="postImage" src="/images/{{ page.image }}"><br><br>{% endif %}
+			    		{% if page.image %}<img class="postImage" src="{{ page.image }}"><br><br>{% endif %}
 			    	</div>
 			    	<div class="postBody">
 			    		{{ content }}
