@@ -11,7 +11,7 @@
 			    	<div class="postHeader">
 			    		<h3 class="postTile">{{ page.title }}</h2>
 			    		<p class="postMeta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
-			    		<div class="fb-like" data-href="{{ post.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-width="160"></div>
+			    		<div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-width="160"></div>
 			    		<br><br>
 			    		{% if page.image %}<img class="postImage" src="{{ page.image }}"><br><br>{% endif %}
 			    	</div>
@@ -20,7 +20,7 @@
 			    	</div>
 			    	<div class="postFooter">
 			    		<br><br>
-			    		<div class="fb-comments" data-href="{{ post.url }}" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+			    		<div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
 			    	</div>
 			    </div>
 			</div>
