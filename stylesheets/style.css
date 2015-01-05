@@ -16,12 +16,19 @@ html, body {
     color: white;
 }
 
+.h2fontmargin {
+    font-family: jaapokki;
+    color: white;
+    margin-bottom: 10px !Important;
+    margin-top: 20px !Important;
+}
+
 .header {
-	min-height: 15%; 
+	min-height: 15%;
 	background-color: black; 
 	border-bottom-style: double;
 	border-color: white;
-	padding-top: 8px;
+	padding-top: 0;
 }
 
 .footer {
@@ -35,7 +42,7 @@ html, body {
 
 .main {
 	min-height: 75%; 
-	padding-top: 16px;
+	padding-top: 0;
 	padding-bottom: 16px;
 }
 
@@ -102,4 +109,25 @@ a:visited, a:link {
 
 .active {
 	background-color: #222;
+}
+
+.black-nav {
+	background-color: black !Important; 
+	border-bottom-style: double !Important;
+	border-color: white !Important;
+	overflow: hidden;
+}
+
+.navbar, .navbar-header {
+	min-height: 0 !Important;
+	padding-bottom: 0 !Important;
+	margin-bottom: 0 !Important;
+}
+
+.navDiv {
+	height: 100%;
+}
+
+.navHeader {
+	height: 5%;
 }

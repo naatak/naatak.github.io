@@ -7,7 +7,7 @@
 	<meta property="og:site_name" content="PenNaatak Theatre" />
 	<meta property="og:url" content="http://pennaataktheatre.com/2015/01/01/naatak-new-website.html" />
 	
-	<meta property="og:image" content="http://pennaataktheatre.com/images/RShark.jpg" />
+	<meta property="og:image" content="http://pennaataktheatre.com/images/naatak-logo.jpg" />
 	
 	<meta property="og:type" content="website" />
 	
@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/> -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
   <body>
   	<script>
@@ -40,45 +42,185 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <div id="fb-root"></div>
-    <div class="header">
+
+<script>
+  $(document).ready(function() {
+    $("#hideThisBar").hide();
+    $(document).scroll(function() {
+      if ($(window).width() < 768)
+        return;
+        // The 30 is because of the margins on the "PenNaatak" header ".h2fontmargin"
+        if ($(window).scrollTop() - ($("#scrollToHere").height() + 30) >= 0) {
+          $("#hideThisBar").show();
+          set_heights(".navDiv");
+        }
+        else {
+          $("#hideThisBar").hide();
+        }
+    });
+    if ($(window).width() < 768) {
+      $("#mainHeader").hide();
+      $("#hideThisBar").show();
+      $("#hideThisBar").addClass("navHeader");
+    }
+    else {
+      set_heights(".headerDiv");
+    }
+    $(window).resize(function() {
+      if ($(window).width() < 768) {
+        $("#mainHeader").hide();
+        $("#hideThisBar").show();
+        $("#hideThisBar").addClass("navHeader");
+        reset_heights();
+      }
+      else {
+        $("#hideThisBar").removeClass("navHeader");
+        $("#mainHeader").show();
+        set_heights(".headerDiv");
+        if ($(window).scrollTop() - ($("#scrollToHere").height() + 30) >= 0) {
+          $("#hideThisBar").show();
+          set_heights(".navDiv");
+        }
+        else {
+          $("#hideThisBar").hide();
+        }
+      }
+    });
+  });
+  var set_heights = function(cl) {
+    $(cl).each(function (index) {
+      $(this).height("100%");
+    });
+    var max_ht = 0;
+    $(cl).each(function (index) {
+      if ($(this).height() > max_ht)
+        max_ht = $(this).height();
+    });
+    $(cl).each(function (index) {
+      $(this).height(max_ht);
+    });
+  };
+  var reset_heights = function(cl) {
+    $(".navDiv").each(function (index) {
+      $(this).height("100%");
+    });
+  };
+</script>
+    <div class="header" id="mainHeader">
 	<div class="container" align="center">
-        <h2 class="h2font">
-            <a href="/" style="text-decoration: none; color:white;">
-                Pen<span style="color: red">N</span>aatak
-            </a>
-        </h2>
+        <div id="scrollToHere">
+            <h2 class="h2fontmargin">
+                <a href="/" style="text-decoration: none; color:white;">
+                    Pen<span style="color: red">N</span>aatak
+                </a>
+            </h2>
+        </div>
         <a href="/">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navHome">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navHome">
                 <h4 class="h2font">
                     Home
                 </h4>
             </div>
         </a>
         <a href="/upcoming">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navUpcoming">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navUpcoming">
                 <h4 class="h2font">
                     Upcoming Show
                 </h4>
             </div>
         </a>
+        <a href="/getinvolved">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navGet">
+                <h4 class="h2font">
+                    Get Involved
+                </h4>
+            </div>
+        </a>
+        <a href="/gallery">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navGallery">
+                <h4 class="h2font">
+                    Gallery
+                </h4>
+            </div>
+        </a>
         <a href="/past">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navPast">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navPast">
                 <h4 class="h2font">
                     Past Productions
                 </h4>
             </div>
         </a>
         <a href="/about">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="navAbout">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navAbout">
                 <h4 class="h2font">
                     About
                 </h4>
             </div>
         </a>
 	</div> 
+</div>
+    <div id="hideThisBar">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="black-nav">
+			<div class="container" align="center">
+				<!-- Brand and toggle get grouped for better mobile display -->
+
+				<a href="/">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 navDiv">
+						<h4 class="h2font">Pen<span style="color: red">N</span>aatak</h4>
+					</div>
+				</a>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: #222;">
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<a href="/upcoming">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navUpcoming2">
+							<h4 class="h2font">
+								Upcoming Show
+							</h4>
+						</div>
+					</a>
+					<a href="/getinvolved">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navGet2">
+							<h4 class="h2font">
+								Get Involved
+							</h4>
+						</div>
+					</a>
+					<a href="/gallery">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navGallery2">
+							<h4 class="h2font">
+								Gallery
+							</h4>
+						</div>
+					</a>
+					<a href="/past">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navPast2">
+							<h4 class="h2font">
+								Past Productions
+							</h4>
+						</div>
+					</a>
+					<a href="/about">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navAbout2">
+							<h4 class="h2font">
+								About
+							</h4>
+						</div>
+					</a>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</div>
+	</nav>
 </div>
     <div class="main">
     	<div class="container" align="center">
@@ -113,19 +255,27 @@
 		</div>
     </div>
     <div class="footer">
-	<div class="container" align="center">
-        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-        <a href="mailto:naatak@gmail.com">
-            <img src="/images/mailicon.png" class="invert_image footer_img">
-        </a>
-		<a href="https://www.facebook.com/pennaatak?fref=ts">
-			<img src="/images/FB-f-Logo__white_29.png" class="footer_img">
-		</a>
-		<a href="https://twitter.com/Pennaatak">
-			<img src="/images/Twitter_logo_white.png" class="footer_img" style="width: 24px; height: auto; padding-right: 0;">
-		</a>
+	<div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4" align="left">
+            <a href="http://http://sacfunded.net/">
+                <img src="/images/SAC.gif" class="invert_image footer_img" style="padding-top:8px; padding-bottom: 8px;">
+            </a>
+            <a href="http://www.vpul.upenn.edu/pac/">
+                <img src="/images/PAC_Badge.png" class="invert_image footer_img" style="width: 24px; height: auto; padding-right: 0; padding-bottom: 8px; padding-top:8px;">
+            </a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="color: white; padding: 8px">© PenNaatak 2014</div>
+        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4" align="center">
+            <a href="mailto:naatak@gmail.com">
+                <img src="/images/mailicon.png" class="invert_image footer_img">
+            </a>
+    		<a href="https://www.facebook.com/pennaatak?fref=ts">
+    			<img src="/images/FB-f-Logo__white_29.png" class="footer_img">
+    		</a>
+    		<a href="https://twitter.com/Pennaatak">
+    			<img src="/images/Twitter_logo_white.png" class="footer_img" style="width: 24px; height: auto; padding-right: 0;">
+    		</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4" style="color: white; padding: 8px" align="right">© PenNaatak 2014</div>
 	</div>
 </div>
   </body>

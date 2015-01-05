@@ -15,6 +15,73 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <div id="fb-root"></div>
+
+<script>
+  $(document).ready(function() {
+    $("#hideThisBar").hide();
+    $(document).scroll(function() {
+      if ($(window).width() < 768)
+        return;
+        // The 30 is because of the margins on the "PenNaatak" header ".h2fontmargin"
+        if ($(window).scrollTop() - ($("#scrollToHere").height() + 30) >= 0) {
+          $("#hideThisBar").show();
+          set_heights(".navDiv");
+        }
+        else {
+          $("#hideThisBar").hide();
+        }
+    });
+    if ($(window).width() < 768) {
+      $("#mainHeader").hide();
+      $("#hideThisBar").show();
+      $("#hideThisBar").addClass("navHeader");
+    }
+    else {
+      set_heights(".headerDiv");
+    }
+    $(window).resize(function() {
+      if ($(window).width() < 768) {
+        $("#mainHeader").hide();
+        $("#hideThisBar").show();
+        $("#hideThisBar").addClass("navHeader");
+        reset_heights();
+      }
+      else {
+        $("#hideThisBar").removeClass("navHeader");
+        $("#mainHeader").show();
+        set_heights(".headerDiv");
+        if ($(window).scrollTop() - ($("#scrollToHere").height() + 30) >= 0) {
+          $("#hideThisBar").show();
+          set_heights(".navDiv");
+        }
+        else {
+          $("#hideThisBar").hide();
+        }
+      }
+    });
+  });
+  var set_heights = function(cl) {
+    $(cl).each(function (index) {
+      $(this).height("100%");
+    });
+    var max_ht = 0;
+    $(cl).each(function (index) {
+      if ($(this).height() > max_ht)
+        max_ht = $(this).height();
+    });
+    $(cl).each(function (index) {
+      $(this).height(max_ht);
+    });
+  };
+  var reset_heights = function(cl) {
+    $(".navDiv").each(function (index) {
+      $(this).height("100%");
+    });
+  };
+</script>
