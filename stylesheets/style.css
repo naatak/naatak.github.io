@@ -24,7 +24,6 @@ html, body {
 }
 
 .header {
-	min-height: 15%;
 	background-color: black; 
 	border-bottom-style: double;
 	border-color: white;
