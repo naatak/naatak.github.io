@@ -21,7 +21,6 @@ html, body {
 }
 
 .header {
-	min-height: 15%;
 	background-color: black; 
 	border-bottom-style: double;
 	border-color: white;
@@ -127,4 +126,36 @@ a:visited, a:link {
 
 .navHeader {
 	height: 5%;
+}
+
+.cover {
+	height: 50%;
+	margin-top: 0px; 
+	overflow: hidden;
+	text-align: center; 
+	background-image: url('/images/quad.jpg'); 
+	background-repeat: repeat-y;
+	background-size: 140%;
+	background-attachment: fixed;
+	position: relative;
+	/*-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+}
+
+div.pagetitle {
+	width: 100%;
+	background-color: white;
+	opacity: 0.8;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	border-top-style: double;
+	border-bottom-style: double; 
+	border-color: black;
+}
+
+.pagetitle h3 {
+	opacity: 100;
+	font-weight: bold;
+    color: #000000;
 }
