@@ -15,7 +15,7 @@ The Who & The What centers around Zarina, who has a bone to pick with the place 
 
 Here is a note from our director, Naatak veteran and College senior Rhea Mehta, on why she chose this play to direct: 
 
->The Who & the What is play that spoke to me literally from Page 1. My new-found love for all things Islam and the presence of strong and empowered female leads aside, I loved how the story was moving but understated, rebellious but powerful and bare but thought provoking. The beauty of The Who and the What for me was in its simplicity, authenticity and relatability, not just to Muslims but to anyone who wants to question and redefine anything in their world.
+>The Who & The What is a play that spoke to me literally from Page 1. My new-found love for all things Islam and the presence of strong and empowered female leads aside, I loved how the story was moving but understated, rebellious but powerful and bare but thought provoking. The beauty of The Who & The What for me was in its simplicity, authenticity and relatability, not just to Muslims but to anyone who wants to question and redefine anything in their world.
 
 And with that, let's begin. Our production might be showing all the way down at the end of March, but auditions are right around the corner. Here's the information:
 
