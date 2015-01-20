@@ -34,10 +34,11 @@ html, body {
 	border-top-style: double;
 	border-color: white;
 	padding-top: 16px;
+	padding-bottom: 8px;
 }
 
 .main {
-	min-height: 75%; 
+	min-height: 85%; 
 	padding-top: 0;
 	padding-bottom: 16px;
 }
