@@ -1,13 +1,13 @@
 ---
 layout: post
 date: 2015-03-01
-title: "Why We Chose The Play: Ahmed Mohielden (Show Convener)"
+title: "Why We Chose The Play: Ahmed Mohieldin (Show Convener)"
 author: Eli Cory
 thumbnail: "http://pennaataktheatre.com/images/ahmed.jpg"
 excerpt: "Third installment of why the board chose The Who & The What by Ayad Akhtar. Our new TACe chair's take!"
 ---
 
-Ahmed Mohielden
+Ahmed Mohieldin
 ===============
 
 #####**1. Who are you? What is your position on the Board? What does that even mean?**
