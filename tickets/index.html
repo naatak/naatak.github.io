@@ -40,8 +40,8 @@ title: Tickets
                           Friday, March 27 at 6:00 PM <span style="color:red;">(Ticket sales for Friday are closed. You can buy tickets at the door)</span>
                         </label><br>
                         <label>
-                          <input type="radio" name="optionsRadios" value="Sat" checked>
-                          Saturday, March 28 at 4:00 PM
+                          <input type="radio" name="optionsRadios" value="Sat" disabled>
+                          Saturday, March 28 at 4:00 PM <span style="color:red;">(Ticket sales for Saturday are closed. You can buy tickets at the door)</span>
                         </label>
                       </div>
                     </div>
@@ -115,7 +115,7 @@ title: Tickets
     $(document).ready(function() {
         $("#navGallery").addClass("active");
         $("#navGallery2").addClass("active");
-        $("#venmo-btn").click(function() {
+        /*$("#venmo-btn").click(function() {
           var url = "https://venmo.com/?txn=pay&recipients=7573181589&audience=private";
           var tcks = $("#ticketNumber").val();
           var amt = tcks * 8;
@@ -159,6 +159,6 @@ title: Tickets
             $("#divTck").addClass("has-success");
             $("#divTck").removeClass("has-error");
           }
-        });
+        });*/
     });
 </script>
