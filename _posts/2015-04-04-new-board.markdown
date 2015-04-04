@@ -3,7 +3,7 @@ layout: post
 date: 2015-04-04
 title: "Naatak's 2015-2016 Executive Board"
 author: Shreshth Khilani
-thumbnail: "http://pennaataktheatre.com/images/15board.jpg"
+thumbnail: "http://pennaataktheatre.com/images/15board.JPG"
 excerpt: "Who's What on Naatak's new Board for 2015-2016"
 ---
 
@@ -12,4 +12,4 @@ PenNaatak's Executive Board
 
 
 
-![The Board](http://pennaataktheatre.com/images/15board.jpg)
+![The Board](http://pennaataktheatre.com/images/15board.JPG)
