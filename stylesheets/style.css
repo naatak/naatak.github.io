@@ -163,3 +163,27 @@ div.pagetitle {
 	font-weight: bold;
     color: #000000;
 }
+
+.galleryImage {
+	width: 100%;
+}
+
+.thumbImage {
+	height: 100%;
+	cursor: pointer;
+}
+
+.thumbDiv {
+	height: 60px;
+	overflow: hidden;
+}
+
+a img:hover {
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.hoverImage {
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+}

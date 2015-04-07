@@ -8,17 +8,57 @@ title: Home
             <h3>Gallery
                 <br>
                 <small>
-                    Send us pictures you want to see here or upload them and tag them <strong>#GetAGalleryNaatak</strong>
+                    Send us photographs you want to see here
                 </small>
             </h3>
             <br>
+            <div id="thumbnails">
+            </div>
+            <div id="caption">
+            </div>
+            <div id="image">
+                <img class="galleryImage" id="mainImage" src="">
+            </div>
         </div>
     </div>
 </div>
 
 <script>
+    
     $(document).ready(function() {
         $("#navGallery").addClass("active");
         $("#navGallery2").addClass("active");
+        
+        var imgs;
+        var galleryString = "<div class='row'>";
+        $.getJSON('/gallery/data.json', function(data) {
+            var count = 0;
+            $.each(data.items, function(key, val) {
+                if (count == 0) {
+                    galleryString += "<div class='col-lg-1 col-md-1 col-sm-2 col-xs-2 thumbDiv'><img src='" + val.img + "' class='thumbImage hoverImage' alt='" + val.cap + "'></div>";
+                    $("#mainImage").attr("src", val.img);
+                    $('#caption').text("");
+                    $('#caption').append("<h4>" + val.cap + "</h4>");
+                }
+                else {
+                    galleryString += "<div class='col-lg-1 col-md-1 col-sm-2 col-xs-2 thumbDiv'><img src='" + val.img + "' class='thumbImage' alt='" + val.cap + "'></div>";
+                }
+                count++;
+            });
+        })
+            .always(function() {
+                galleryString += "</div>";
+                console.log(galleryString);
+                $("#thumbnails").append(galleryString);
+                $(".thumbImage").click(function(e) {
+                    $("#mainImage").attr("src", $(this).attr("src"));
+                    $('#caption').text("");
+                    $('#caption').append("<h4>" + $(this).attr("alt") + "</h4>");
+                    $(".thumbImage").each(function() {
+                        $(this).removeClass("hoverImage");
+                    });
+                    $(this).addClass("hoverImage");
+                });
+            });
     });
 </script>
