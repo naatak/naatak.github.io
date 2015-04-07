@@ -12,7 +12,12 @@
 		},
 
 		{
-			"img" : "/imageGallery/03.JPG",
+			"img" : "/imageGallery/03.jpg",
+			"cap" : "The Who &amp; The What | March, 2015"
+		},
+
+		{
+			"img" : "/imageGallery/04.jpg",
 			"cap" : "The Who &amp; The What | March, 2015"
 		}
 	]
