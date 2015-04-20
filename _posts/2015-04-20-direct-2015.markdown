@@ -3,7 +3,7 @@ layout: post
 date: 2015-04-20
 title: "Now accepting proposals. To direct."
 author: Shreshth Khilani
-thumbnail: "http://pennaataktheatre.com/images/naatak-dir-fb-cover.png"
+thumbnail: "http://pennaataktheatre.com/images/direct.jpg"
 excerpt: "Naatak is now accepting directing proposals for our Fall 2015 show! Submit a proposal by Friday 4/24 and change your life"
 ---
 Fall 2015 Directing Proposals
