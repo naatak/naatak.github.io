@@ -3,14 +3,14 @@ layout: post
 date: 2015-02-22
 title: "Why We Chose The Play: Nikhil Venkatesa (Creative Director)"
 author: Eli Cory
-thumbnail: "https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10411127_10152829559586558_841203743946052491_n.jpg?oh=b4c989af6bbc0165aaa377b46ac91720&oe=5585E1BD&__gda__=1431025282_6d3b13d3a888348a80d2776a51fb7bac"
+thumbnail: "http://pennaataktheatre.com/images/nikhil.jpg"
 excerpt: "First in a series of why the board chose The Who & The What by Ayad Akhtar."
 ---
 
 #Nikhil Venkatesa
 
 
-![Nikhil Venkatesa](https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10411127_10152829559586558_841203743946052491_n.jpg?oh=b4c989af6bbc0165aaa377b46ac91720&oe=5585E1BD&__gda__=1431025282_6d3b13d3a888348a80d2776a51fb7bac)
+![Nikhil Venkatesa](http://pennaataktheatre.com/images/nikhil.jpg)
 
 #####1. Who are you? What is your position on the Board? What does that even mean?
 
