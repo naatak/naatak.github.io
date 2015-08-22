@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>PenNaatak Theatre | Now accepting proposals. To direct.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta property="og:title" content="Now accepting proposals. To direct." />
+	<meta property="og:site_name" content="PenNaatak Theatre" />
+	<meta property="og:url" content="http://pennaataktheatre.com/2015/04/20/direct-2015.html" />
+	
+	<meta property="og:image" content="http://pennaataktheatre.com/images/direct.jpg" />
+	
+	<meta property="og:type" content="website" />
+	
+	<meta property="og:description" content="Naatak is now accepting directing proposals for our Fall 2015 show! Submit a proposal by Friday 4/24 and change your life" />
+	
+	<meta property="fb:app_id" content="799303723469067" />
+	<meta name="twitter:widgets:csp" content="on">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" href="http://www.upenn.edu/favicon.ico">
+</head>
+  <body>
+  	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '799303723469067',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div id="fb-root"></div>
+
+<script>
+  $(document).ready(function() {
+    $("#hideThisBar").hide();
+    $(document).scroll(function() {
+      if ($(window).width() < 768)
+        return;
+        // The 30 is because of the margins on the "PenNaatak" header ".h2fontmargin"
+        if ($(window).scrollTop() - ($("#scrollToHere").height() + 30) >= 0) {
+          $("#hideThisBar").show();
+          set_heights(".navDiv");
+        }
+        else {
+          $("#hideThisBar").hide();
+        }
+    });
+    if ($(window).width() < 768) {
+      $("#mainHeader").hide();
+      $("#hideThisBar").show();
+      $("#hideThisBar").addClass("navHeader");
+    }
+    else {
+      set_heights(".headerDiv");
+    }
+    $(window).resize(function() {
+      if ($(window).width() < 768) {
+        $("#mainHeader").hide();
+        $("#hideThisBar").show();
+        $("#hideThisBar").addClass("navHeader");
+        reset_heights();
+      }
+      else {
+        $("#hideThisBar").removeClass("navHeader");
+        $("#mainHeader").show();
+        set_heights(".headerDiv");
+        if ($(window).scrollTop() - ($("#scrollToHere").height() + 30) >= 0) {
+          $("#hideThisBar").show();
+          set_heights(".navDiv");
+        }
+        else {
+          $("#hideThisBar").hide();
+        }
+      }
+    });
+  });
+  var set_heights = function(cl) {
+    $(cl).each(function (index) {
+      $(this).height("100%");
+    });
+    var max_ht = 0;
+    $(cl).each(function (index) {
+      if ($(this).height() > max_ht)
+        max_ht = $(this).height();
+    });
+    $(cl).each(function (index) {
+      $(this).height(max_ht);
+    });
+  };
+  var reset_heights = function(cl) {
+    $(".navDiv").each(function (index) {
+      $(this).height("100%");
+    });
+  };
+</script>
+    <div class="header" id="mainHeader">
+	<div class="container" align="center">
+        <div id="scrollToHere">
+            <h2 class="h2fontmargin">
+                <a href="/" style="text-decoration: none; color:white;">
+                    Pen<span style="color: red">N</span>aatak
+                </a>
+            </h2>
+        </div>
+        <a href="/">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navHome">
+                <h4 class="h2font">
+                    Home
+                </h4>
+            </div>
+        </a>
+        <a href="/upcoming">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navUpcoming">
+                <h4 class="h2font">
+                    Upcoming Show
+                </h4>
+            </div>
+        </a>
+        <a href="/getinvolved">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navGet">
+                <h4 class="h2font">
+                    Get Involved
+                </h4>
+            </div>
+        </a>
+        <a href="/gallery">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navGallery">
+                <h4 class="h2font">
+                    Gallery
+                </h4>
+            </div>
+        </a>
+        <a href="/past">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navPast">
+                <h4 class="h2font">
+                    Past Productions
+                </h4>
+            </div>
+        </a>
+        <a href="/about">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 headerDiv" id="navAbout">
+                <h4 class="h2font">
+                    About
+                </h4>
+            </div>
+        </a>
+	</div> 
+</div>
+    <div id="hideThisBar" hidden>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="black-nav">
+			<div class="container" align="center">
+				<!-- Brand and toggle get grouped for better mobile display -->
+
+				<a href="/">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 navDiv">
+						<h4 class="h2font">Pen<span style="color: red">N</span>aatak</h4>
+					</div>
+				</a>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: #222;">
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<a href="/upcoming">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navUpcoming2">
+							<h4 class="h2font">
+								Upcoming Show
+							</h4>
+						</div>
+					</a>
+					<a href="/getinvolved">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navGet2">
+							<h4 class="h2font">
+								Get Involved
+							</h4>
+						</div>
+					</a>
+					<a href="/gallery">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navGallery2">
+							<h4 class="h2font">
+								Gallery
+							</h4>
+						</div>
+					</a>
+					<a href="/past">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navPast2">
+							<h4 class="h2font">
+								Past Productions
+							</h4>
+						</div>
+					</a>
+					<a href="/about">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 navDiv" id="navAbout2">
+							<h4 class="h2font">
+								About
+							</h4>
+						</div>
+					</a>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</div>
+	</nav>
+</div>
+    <div class="main">
+    	<div class="container" align="center">
+	    	<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+		    	<div class="post" align="center">
+			    	<div class="postHeader">
+			    		<h3 class="postTile">Now accepting proposals. To direct.</h2>
+			    		<p class="postMeta">Apr 20, 2015 • Shreshth Khilani</p>
+			    		<div class="fb-like" data-href="http://pennaataktheatre.com/2015/04/20/direct-2015.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-width="160"></div>
+			    		<br><br>
+			    		
+			    	</div>
+			    	<div class="postBody">
+			    		<h1 id="fall-2015-directing-proposals">Fall 2015 Directing Proposals</h1>
+
+<p>Proposals to direct Naatak’s fall 2015 show are now being accepted. If you want to direct a show and are thinking whether Naatak is for you, read on to find out more.</p>
+
+<h4 id="what-kind-of-play-should-i-propose">What kind of play should I propose?</h4>
+
+<p>PenNaatak does shows that are related to South Asia in some way. Whether or not you’re South Asian, this might seem narrow and restrictive. It seems like you need to do an <em>Indian play</em> with an <em>Indian cast</em> and <em>Indian songs</em> to get our attention. Right? No, you’re wrong.</p>
+
+<p>Naatak isn’t restrictive in the nature of plays it does. Au contraire, Naatak’s concept of South Asian theatre is extremely broad; a play does not have to be set in India to be eligible. We only ask that directors identify a South Asian element within each of their plays i.e. in the form of playwright, theme, setting, or in a way that directors can justify.</p>
+
+<h4 id="do-i-even-need-to-propose-with-a-show">Do I even need to propose with a show?</h4>
+
+<p>No. Naatak selects a director based on whether they’d make a good director and would be fun to work with. You don’t need to submit a show to be considered. We can help you find a show that excites you after we select you direct for us. Why choose now when we have a summer to reflect?</p>
+
+<h4 id="why-naatak-though">Why Naatak, though?</h4>
+
+<p>Directing for Naatak is an extremely satisfying creative activity. We provide you with an outlet to display your talent, support and help you through the process, give you complete creative freedom, and push you so you learn as much from us as we do from you. Just read what previous directors have to say:</p>
+
+<p>David Swigart (directed <em>Tara</em>, Fall 2014):</p>
+
+<blockquote>
+  <p>There is a surprising amount of freedom with Naatak, not only to put forth your vision, but to experiment with it. You can practice being a director,  instead of just pretending to be a professional already.</p>
+</blockquote>
+
+<p>Nikhil Venkatesa (wrote and directed <em>The Elephant</em>, Spring 2014):</p>
+
+<blockquote>
+  <p>Naatak makes you move from in front of the stage to behind it, and that experience is a trial of fire out of which your understanding of theatre shifts dramatically.</p>
+</blockquote>
+
+<h4 id="how-do-you-apply-you-ask">How do you apply, you ask?</h4>
+
+<p>Submit a proposal to direct by filling out <a href="https://docs.google.com/forms/d/1KXol1So6uiLGTfxj5TMurXSU0uEpugIjcJWqrii64Pk/viewform">this Google Form</a>. Feel free to reach out to us via email or directly talk to a board member if you have any questions. Send your proposal in by 11:59pm on Friday 4/24/2015 or ask us if you want an extension.</p>
+
+<p><img src="http://pennaataktheatre.com/images/naatak-dir-fb-cover.png" alt="Photograph" /></p>
+
+			    	</div>
+			    	<div class="postFooter">
+			    		<br><br>
+			    		<div class="fb-comments" data-href="http://pennaataktheatre.com/2015/04/20/direct-2015.html" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+    </div>
+    <div class="footer">
+	<div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4" align="left">
+            <a href="http://http://sacfunded.net/">
+                <img src="/images/SAC.gif" class="invert_image footer_img">
+            </a>
+            <a href="http://www.vpul.upenn.edu/pac/">
+                <img src="/images/PAC_Badge.png" class="invert_image footer_img">
+            </a>
+            <a href="https://www.southasia.upenn.edu/">
+                <img src="/images/sast.gif" class="footer_img" style="padding-right: 0;">
+            </a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4" align="center">
+            <a href="mailto:naatak@gmail.com">
+                <img src="/images/mailicon.png" class="invert_image footer_img">
+            </a>
+    		<a href="https://www.facebook.com/pennaatak?fref=ts">
+    			<img src="/images/FB-f-Logo__white_29.png" class="footer_img">
+    		</a>
+    		<a href="https://twitter.com/Pennaatak">
+    			<img src="/images/Twitter_logo_white.png" class="footer_img" style="width: 24px; height: auto; padding-right: 0;">
+    		</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4" style="color: white; padding: 8px" align="right">© PenNaatak 2015</div>
+	</div>
+</div>
+  </body>
+</html>
