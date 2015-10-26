@@ -149,7 +149,6 @@ title: Tickets
         $("#navUpcoming2").addClass("active");
 
         $("#venmo-btn").click(function() {
-          alert("hello");
           var url = "https://venmo.com/?txn=pay&recipients=Shreshth&audience=private";
           var tcks = $("#ticketNumber").val();
           var amt = tcks * 8;
@@ -169,7 +168,6 @@ title: Tickets
           var amount = "&amount=" + amt;
           var note = "&note=Naatak%20Show%20Tickets%20(" + encodeURIComponent(name) + "%2C" + tcks + "%2C" + day + "%2C" + encodeURIComponent(ref) + ")";
           url = url + amount + note;
-          alert(url);
           window.location.href = url;
           return false;
         });
