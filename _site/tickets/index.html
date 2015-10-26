@@ -305,7 +305,7 @@
                     <div class="col-sm-offset-2 col-sm-10">
                       <span style="color: #FF0000;">You aren't done after hitting this button.</span><br>
                       You will be redirected to Venmo, where you must complete the payment.<br>
-                      <button class="btn btn-default" id="venmo-btn">Go to Venmo</button>
+                      <button class="btn btn-default" id="venmo-btn" type="button">Go to Venmo</button>
                     </div>
                   </div>
                 </form>
@@ -333,7 +333,7 @@
 
 <script>
     $(document).ready(function() {
-        var getUrlParameter = function getUrlParameter(sParam) {
+        var getUrlParameter = function (sParam) {
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),
                 sURLVariables = sPageURL.split('&'),
                 sParameterName,
@@ -349,27 +349,29 @@
         };
 
         var r = getUrlParameter("r");
-        r = r.replace('+',' ');
 
-        if (r === 'Aashish Lalani' || r === 'Anaya Jhaveri' || 
-          r === 'Brian Mendoza' || r === 'Daniel Katz' || 
-          r === 'Elijah Cory' || r === 'Halima Said' || 
-          r === 'Justin Lee' || r === 'Kuhuk Shroff' || 
-          r === 'Lucas Silva' || r === 'Meerabelle Jesuthasan' || 
-          r === 'Monisha Gulabani' || r === 'Olivia Ly' || 
-          r === 'Pallavi Surana' || r === 'Percia Verlin' || 
-          r === 'Priyanshi Pokharna' || r === 'Rohan Bhide' || 
-          r === 'Ryan Sharafuddin' || r === 'Sanika Khare' || 
-          r === 'Sanjana Sarkar' || r === 'Sarah Elnahal' || 
-          r === 'Shaishvi Shrivastava' || r === 'Shreshth Khilani' || 
-          r === 'Shreya Zaveri' || r === 'Taha Tariq' || 
-          r === 'Vedika Gopal') {
+        if (r === 'Aashish+Lalani' || r === 'Anaya+Jhaveri' || 
+          r === 'Brian+Mendoza' || r === 'Daniel+Katz' || 
+          r === 'Elijah+Cory' || r === 'Halima+Said' || 
+          r === 'Justin+Lee' || r === 'Kuhuk+Shroff' || 
+          r === 'Lucas+Silva' || r === 'Meerabelle+Jesuthasan' || 
+          r === 'Monisha+Gulabani' || r === 'Olivia+Ly' || 
+          r === 'Pallavi+Surana' || r === 'Percia+Verlin' || 
+          r === 'Priyanshi+Pokharna' || r === 'Rohan+Bhide' || 
+          r === 'Ryan+Sharafuddin' || r === 'Sanika+Khare' || 
+          r === 'Sanjana+Sarkar' || r === 'Sarah+Elnahal' || 
+          r === 'Shaishvi+Shrivastava' || r === 'Shreshth+Khilani' || 
+          r === 'Shreya+Zaveri' || r === 'Taha+Tariq' || 
+          r === 'Vedika+Gopal') {
+          r = r.replace('+',' ');
           $('#refname').val(r);
         }
 
         $("#navUpcoming").addClass("active");
         $("#navUpcoming2").addClass("active");
+
         $("#venmo-btn").click(function() {
+          alert("hello");
           var url = "https://venmo.com/?txn=pay&recipients=Shreshth&audience=private";
           var tcks = $("#ticketNumber").val();
           var amt = tcks * 8;
@@ -389,9 +391,11 @@
           var amount = "&amount=" + amt;
           var note = "&note=Naatak%20Show%20Tickets%20(" + encodeURIComponent(name) + "%2C" + tcks + "%2C" + day + "%2C" + encodeURIComponent(ref) + ")";
           url = url + amount + note;
+          alert(url);
           window.location.href = url;
           return false;
         });
+
         $("#nameInput").change(function() {
           var name = $("#nameInput").val();
           if (name == "") {
@@ -403,6 +407,7 @@
             $("#divName").removeClass("has-error");
           }
         });
+
         $("#ticketNumber").change(function() {
           var t = $("#ticketNumber").val();
           if (t < 1 || t % 1 != 0) {
