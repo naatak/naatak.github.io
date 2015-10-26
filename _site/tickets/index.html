@@ -281,7 +281,7 @@
                         <option value='Halima Said'>Halima Said</option>
                         <option value='Justin Lee'>Justin Lee</option>
                         <option value='Kuhuk Shroff'>Kuhuk Shroff</option>
-                        <option value='Lucas G. Silva'>Lucas G. Silva</option>
+                        <option value='Lucas Silva'>Lucas Silva</option>
                         <option value='Meerabelle Jesuthasan'>Meerabelle Jesuthasan</option>
                         <option value='Monisha Gulabani'>Monisha Gulabani</option>
                         <option value='Olivia Ly'>Olivia Ly</option>
@@ -331,6 +331,40 @@
 
 <script>
     $(document).ready(function() {
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+
+        var r = getUrlParameter("r");
+        r = r.replace('+',' ');
+
+        if (r === 'Aashish Lalani' || r === 'Anaya Jhaveri' || 
+          r === 'Brian Mendoza' || r === 'Daniel Katz' || 
+          r === 'Elijah Cory' || r === 'Halima Said' || 
+          r === 'Justin Lee' || r === 'Kuhuk Shroff' || 
+          r === 'Lucas Silva' || r === 'Meerabelle Jesuthasan' || 
+          r === 'Monisha Gulabani' || r === 'Olivia Ly' || 
+          r === 'Pallavi Surana' || r === 'Percia Verlin' || 
+          r === 'Priyanshi Pokharna' || r === 'Rohan Bhide' || 
+          r === 'Ryan Sharafuddin' || r === 'Sanika Khare' || 
+          r === 'Sanjana Sarkar' || r === 'Sarah Elnahal' || 
+          r === 'Shaishvi Shrivastava' || r === 'Shreshth Khilani' || 
+          r === 'Shreya Zaveri' || r === 'Taha Tariq' || 
+          r === 'Vedika Gopal') {
+          $('#refname').val(r);
+        }
+
         $("#navUpcoming").addClass("active");
         $("#navUpcoming2").addClass("active");
         $("#venmo-btn").click(function() {
