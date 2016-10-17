@@ -8,11 +8,11 @@ title: Tickets
             <h3>Buy Show Tickets</h3>
             <br>
             <h4>
-                The Big Fat Cit<br>
+                I Am Not My Motherland<br>
                 <small>
-                    Written by Mahesh Dattani<br>
-                    Directed by Aashish Lalani<br>
-                    Produced by Elijah Cory
+                    Written by Emily Acker<br>
+                    Directed by Chad Haddad<br>
+                    Produced by Claris Park & Irtaza Ali
                 </small>
             </h4>
             <br>
@@ -36,12 +36,16 @@ title: Tickets
                     <div class="col-sm-10">
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" value="Fri" required>
-                          <!-- Friday, November 6 at 9:00 PM --> <span style="color:red;">(Ticket sales for Friday are closed. You can buy tickets at the door)</span>
+                          <input type="radio" name="optionsRadios" value="Thurs">
+                          <!-- Thursday, October 27 at 7:00 PM --> <span style="color:red;">Thursday, October 27, 7pm</span>
                         </label><br>
                         <label>
-                          <input type="radio" name="optionsRadios" value="Sat" disabled>
-                          <!-- Saturday, November 7 at 4:00 PM --> <span style="color:red;">(Ticket sales for Saturday are closed. You can STILL buy tickets at the door, though!)</span>
+                          <input type="radio" name="optionsRadios" value="Fri">
+                          <!-- Friday, October 28th at 7:00 PM --> <span style="color:red;">Friday, October 28th, 7pm</span>
+                        </label>
+                          <label>
+                          <input type="radio" name="optionsRadios" value="Sat">
+                          <!-- Friday, October 28th at 7:00 PM --> <span style="color:red;">Saturday, October 29th, 2pm</span>
                         </label>
                       </div>
                     </div>
@@ -51,31 +55,11 @@ title: Tickets
                     <div class="col-sm-10">
                       <select class="form-control" id="refname">
                         <option value="None">None</option>
-                        <option value='Aashish Lalani'>Aashish Lalani</option>
                         <option value='Anaya Jhaveri'>Anaya Jhaveri</option>
-                        <option value='Brian Mendoza'>Brian Mendoza</option>
-                        <option value='Daniel Katz'>Daniel Katz</option>
                         <option value='Elijah Cory'>Elijah Cory</option>
                         <option value='Halima Said'>Halima Said</option>
-                        <option value='Justin Lee'>Justin Lee</option>
                         <option value='Kuhuk Shroff'>Kuhuk Shroff</option>
-                        <option value='Lucas Silva'>Lucas Silva</option>
-                        <option value='Meerabelle Jesuthasan'>Meerabelle Jesuthasan</option>
-                        <option value='Monisha Gulabani'>Monisha Gulabani</option>
-                        <option value='Olivia Ly'>Olivia Ly</option>
-                        <option value='Pallavi Surana'>Pallavi Surana</option>
-                        <option value='Percia Verlin'>Percia Verlin</option>
-                        <option value='Priyanshi Pokharna'>Priyanshi Pokharna</option>
-                        <option value='Rohan Bhide'>Rohan Bhide</option>
-                        <option value='Ryan Sharafuddin'>Ryan Sharafuddin</option>
-                        <option value='Sanika Khare'>Sanika Khare</option>
                         <option value='Sanjana Sarkar'>Sanjana Sarkar</option>
-                        <option value='Sarah Elnahal'>Sarah Elnahal</option>
-                        <option value='Shaishvi Shrivastava'>Shaishvi Shrivastava</option>
-                        <option value='Shreshth Khilani'>Shreshth Khilani</option>
-                        <option value='Shreya Zaveri'>Shreya Zaveri</option>
-                        <option value='Taha Tariq'>Taha Tariq</option>
-                        <option value='Vedika Gopal'>Vedika Gopal</option>
                       </select>
                     </div>
                   </div>
@@ -91,9 +75,8 @@ title: Tickets
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" align="left">
                 <h5>Ticket Pricing:</h5> 
                 <ul>
-                  <li>$10 at the door, so buy them now :).</li>
-                  <li>$8 online and on the walk.</li>
-                  <li>$7 if you purchase 6 tickets or more.</li>
+                  <li>$7 at the door, so buy them now :).</li>
+                  <li>$5 online and on the walk.</li>
                 </ul>
                 <h5>Terms and Conditions:</h5>
                 <ul>
@@ -128,19 +111,8 @@ title: Tickets
 
         var r = getUrlParameter("r");
 
-        if (r === 'Aashish+Lalani' || r === 'Anaya+Jhaveri' || 
-          r === 'Brian+Mendoza' || r === 'Daniel+Katz' || 
-          r === 'Elijah+Cory' || r === 'Halima+Said' || 
-          r === 'Justin+Lee' || r === 'Kuhuk+Shroff' || 
-          r === 'Lucas+Silva' || r === 'Meerabelle+Jesuthasan' || 
-          r === 'Monisha+Gulabani' || r === 'Olivia+Ly' || 
-          r === 'Pallavi+Surana' || r === 'Percia+Verlin' || 
-          r === 'Priyanshi+Pokharna' || r === 'Rohan+Bhide' || 
-          r === 'Ryan+Sharafuddin' || r === 'Sanika+Khare' || 
-          r === 'Sanjana+Sarkar' || r === 'Sarah+Elnahal' || 
-          r === 'Shaishvi+Shrivastava' || r === 'Shreshth+Khilani' || 
-          r === 'Shreya+Zaveri' || r === 'Taha+Tariq' || 
-          r === 'Vedika+Gopal') {
+        if (r === 'Anaya+Jhaveri' || r === 'Elijah+Cory' || r === 'Halima+Said' ||
+          r === 'Sanjana+Sarkar') {
           r = r.replace('+',' ');
           $('#refname').val(r);
         }
